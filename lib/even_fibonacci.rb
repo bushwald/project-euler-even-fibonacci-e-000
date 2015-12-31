@@ -1,13 +1,13 @@
 def fib(idx)
-	return num if num < 2
-	fib(num-1) + fib(num-2)
+	return idx if idx < 2
+	fib(idx-1) + fib(idx-2)
 end
 
 def even_fibonacci_sum(num)
 	sumArr = Array.new
 	i = 0
 	sum = 0
-	while(sum < n)
+	while(sum < num)
 		fib = fib(i)
 		exists = false
 		if fib % 2 == 0
@@ -16,7 +16,7 @@ def even_fibonacci_sum(num)
 			}
 			if exists == false && 
 				sumArr << fib
-				return sum if fib >= n
+				return sum if fib >= num
 				sum += fib
 			end
 		end
